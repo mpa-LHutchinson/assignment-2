@@ -1,13 +1,13 @@
 /*********************************************************************************
-* BTI325 – Assignment 3
+* BTI325 – Assignment 4
 * I declare that this assignment is my own work in accordance with Seneca Academic Policy.
 * No part of this assignment has been copied manually or electronically from any other source
 * (including web sites) or distributed to other students.
 *
-* Name: Liam Hutchinson Student ID: 184017218 Date: 10/31/2022
+* Name: Liam Hutchinson Student ID: 184017218 Date: 11/13/2022
 *
 * Online (Heroku) URL:
-* https://arcane-atoll-68489.herokuapp.com/
+* 
 *
 ********************************************************************************/ 
 var employeeList = [];
@@ -132,5 +132,18 @@ exports.getEmployeeByNum = function(num){
             }
         }
         resolve(temp);
+    });
+}
+
+exports.updateEmployee = function(employeeData){
+    return new Promise(function(resolve, reject){
+        console.log("updateEmployee called with " + employeeData.employeeNum);
+        for(employee of employeeList){
+            if(employee.employeeNum == employeeData.employeeNum){
+                var index = employeeList.indexOf(employee);
+                employeeList[index] = employeeData;
+            }
+        }
+        resolve();
     });
 }
