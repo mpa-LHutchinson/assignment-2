@@ -1,15 +1,15 @@
 /*********************************************************************************
-* BTI325 – Assignment 4
+* BTI325 – Assignment 5
 * I declare that this assignment is my own work in accordance with Seneca Academic Policy.
 * No part of this assignment has been copied manually or electronically from any other source
 * (including web sites) or distributed to other students.
 *
 * Name: Liam Hutchinson Student ID: 184017218 Date: 11/13/2022
 *
-* Online (Heroku) URL:
-* https://arcane-atoll-68489.herokuapp.com/
+* Online (Cyclic) URL:
+* https://ill-puce-abalone-gear.cyclic.app/
 *
-********************************************************************************/ 
+********************************************************************************/
 const Sequelize = require('sequelize');
 var sequelize = new Sequelize('shocckjc', 'shocckjc', 'SRyUlZhvNsqTH9U9WBlD9fkUZ8wvLYhf', {
  host: 'peanut.db.elephantsql.com',
